@@ -1,0 +1,126 @@
+.root {
+    -fx-font-family: 'Segoe UI';
+    -fx-base: #e2ceeb;
+}
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 15px;
+}
+
+.custom-table {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.custom-table .table-row-cell {
+    -fx-border-color: transparent;
+}
+
+.custom-table .table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.custom-table .table-row-cell:selected {
+    -fx-background-color: #c051e2;
+    -fx-text-fill: white;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-font-weight: bold;
+}
+
+.form-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.field-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.text-field {
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+    -fx-border-color: #bdc3c7;
+    -fx-padding: 5px;
+}
+
+.add-button {
+    -fx-background-color: #c051e2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+
+.add-button:hover {
+    -fx-background-color: #c051e2;
+}
+
+/* Ajoutez ces règles à votre fichier CSS existant */
+
+.action-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-opacity: 0.7;
+}
+
+/* Dans votre fichier CSS */
+.add-button {
+    -fx-background-color: #c051e2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.update-button {
+    -fx-background-color: #c051e2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.back-button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4px;
+    -fx-padding: 5px 10px 5px 5px;
+    -fx-graphic-text-gap: 5px;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-background-color: white;
+}
+
+.search-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c051e2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-pref-width: 250px;
+}
+
+.search-button {
+    -fx-background-color: #c051e2;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.search-button:hover {
+    -fx-background-color: #a142c8;
+}

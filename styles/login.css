@@ -1,0 +1,32 @@
+.root {
+    -fx-background-color: white;
+}
+
+.field-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.text-field, .password-field {
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+    -fx-border-color: #bdc3c7;
+    -fx-padding: 5px;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+#errorLabel {
+    -fx-text-fill: red;
+    -fx-font-style: italic;
+}

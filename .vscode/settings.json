@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+      "C:/Users/BAZinfo/Downloads/openjfx-17.0.15_windows-x64_bin-sdk/javafx-sdk-17.0.15/**/*.jar",
+      "lib/sqlite-jdbc-3.49.1.0.jar"
+    ]
+  }
+  

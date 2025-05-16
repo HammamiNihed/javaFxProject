@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?> 
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.ProductController" stylesheets="@../styles/products.css">
+    <top>
+        <HBox alignment="CENTER" style="-fx-background-color: #c051e2;">
+            <Label text="GESTION DES PRODUITS" styleClass="header-label"/>
+        </HBox>
+    </top>
+    
+    <center>
+        <VBox spacing="20" style="-fx-padding: 20;">
+                <!-- Ajoutez cette HBox pour le bouton de retour -->
+            <HBox alignment="CENTER_LEFT" style="-fx-padding: 0 0 10 0;">
+                <Button fx:id="backButton" text="Retour" onAction="#returnToMain" styleClass="back-button">
+                    <graphic>
+                        <ImageView fitWidth="16" fitHeight="16">
+                            <Image url="@../icones/left-arrow.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </HBox>
+
+            <HBox alignment="CENTER_RIGHT" style="-fx-padding: 0 0 10 0;">
+                <TextField fx:id="searchField" promptText="Rechercher par nom..." styleClass="search-field">
+                    <padding>
+                        <Insets top="5" right="5" bottom="5" left="5"/>
+                    </padding>
+                </TextField>
+                <Button fx:id="searchButton" text="Rechercher" styleClass="search-button">
+                    
+                </Button>
+            </HBox>
+     
+            <TableView fx:id="productTable" styleClass="custom-table">
+                <columns>
+                    <TableColumn fx:id="colId" text="ID" styleClass="table-column" />
+                    <TableColumn fx:id="colName" text="NOM" styleClass="table-column" />
+                    <TableColumn fx:id="colQuantite" text="QUANTITÉ" styleClass="table-column" />
+                    <TableColumn fx:id="colPrice" text="PRIX (DT)" styleClass="table-column" />
+                    <TableColumn fx:id="colAction" text="ACTIONS" styleClass="table-column">
+                       <!-- Cette colonne sera remplie dynamiquement -->
+                     </TableColumn>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+    
+    <bottom>
+        <VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #ecf0f1;">
+            <Label text="AJOUTER UN PRODUIT" styleClass="form-title"/>
+            
+            <GridPane hgap="10" vgap="10">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="30"/>
+                    <ColumnConstraints percentWidth="70"/>
+                </columnConstraints>
+                
+                <Label text="Nom:" styleClass="field-label"/>
+                <TextField fx:id="txtName" promptText="Entrez le nom du produit" GridPane.columnIndex="1"/>
+                
+                <Label text="Quantité:" styleClass="field-label" GridPane.rowIndex="1"/>
+                <TextField fx:id="txtQuantite" promptText="Quantité en stock" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                
+                <Label text="Prix:" styleClass="field-label" GridPane.rowIndex="2"/>
+                <TextField fx:id="txtPrice" promptText="Prix unitaire" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                
+                <Label text="Catégorie:" styleClass="field-label" GridPane.rowIndex="3"/>
+                <ComboBox fx:id="categoryComboBox" promptText="Sélectionner une catégorie" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            </GridPane>
+            
+            <Button fx:id="addButton" text="AJOUTER PRODUIT" onAction="#onAddProduct" styleClass="add-button"/>
+        </VBox>
+    </bottom>
+</BorderPane>
