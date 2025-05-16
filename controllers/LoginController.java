@@ -35,7 +35,7 @@ public class LoginController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/MainView.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) emailField.getScene().getWindow();
-            stage.setScene(new Scene(root));
+            stage.setScene(new Scene(root,800,600));
         } catch (Exception e) {
             e.printStackTrace();
         }

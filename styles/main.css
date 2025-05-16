@@ -37,9 +37,7 @@
     -fx-background-color: #e74c3c;
     -fx-text-fill: white;
     -fx-font-weight: bold;
-    -fx-padding: 10px 15px;
-    -fx-background-radius: 5px;
-    -fx-cursor: hand;
+    -fx-padding: 10 20;
 }
 
 .logout-button:hover {
